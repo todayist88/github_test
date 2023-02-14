@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p style="font-weight: bold">볼드체</p>
+    <p><b>볼드체</b></p>
+    <p><strong>강조하는 시멘틱 볼드체</strong></p>
+
+    <!-- 위 세가지는 무슨 차이인가? -->
+    <!-- Strong => 강조하고 있는 것이다. 스크린 리더가 실제로 강하게 읽어준다. -->
+    <!-- 따라서 매우 중요하다. (-> 시멘틱 요소: ‘의미’를 가지는 요소) -->
+
+    <p style="font-style: italic">이텔릭체입니다.</p>
+    <p><i>이텔릭체입니다.</i></p>
+    <p><em>강조하는 시멘틱 이텔릭체입니다.</em></p>
+
+    <!-- em tag 역시 강조하는 이텔릭체이다. (시멘틱 요소) -->
+    <!-- 스크린 리더가 실제로 강하게 읽어준다. -->
+
+    <p>텍스트가 <small>작게</small> 보이게 됩니다.</p>
+    <p>집에 오는 길에 <mark>우유</mark>를 사는 걸 잊지 마라.</p>
+    <p>제품 할인 중 <del>3만원</del> 2만8천원</p>
+    <p>내가 제일 좋아하는 색상은 <ins>노란색</ins> 입니다.</p>
+
+    <!-- mark 형광펜 -->
+    <!-- del 취소선 -->
+    <!-- ins 언더라인 -->
+
+    <p>X<sub>2</sub></p>
+    <p>X<sup>2</sup></p>
+    <blockquote cite="http://worldwidelife.org/about">
+      죽느냐 사느냐 그것이 문제로다.
+    </blockquote>
+
+    <!-- blockquote cite=“” : 인용의 출처를 넣어준다.  -->
+    <!-- q 태그 : 짧은 인용 -> 문장의 좌우에 쌍따옴표가 자동으로 붙음 -->
+
+    <q>사느냐 죽느냐 그것이 문제로다.</q>
+    <abbr title="World Health Organization">WHO</abbr>
+    <address>서울시 마포구 토정로33 4층 401호</address>
+
+    <p><cite>절규</cite>는 뭉크가 1893년에 그린 그림입니다</p>
+
+    <br />
+
+    <!-- 아무런 의미를 갖고 있지 않는 태그들 -->
+    <!-- div, span : 컨테이너의 역할 -->
+    <!-- 웹 화면의 콘텐츠(태그)를 배치하기 위한 레이아웃 용도 -->
+
+    <!-- div 태그 -->
+    <!-- div 태그는 block 요소이며 콘텐츠의 크기에 관게없이 한줄 전체를 차지함: div, h1~h6, p -->
+
+    <div style="background-color: pink">div 태그입니다</div>
+
+    <!-- span 태그 -->
+    <!-- span 태그는 inline요소이며 콘텐츠의 크기만큼만 공간을 차지한다. -->
+    <span style="background-color: yellow">span 태그입니다.</span>
+  </body>
+</html>
