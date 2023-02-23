@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 디중 산텍 -->
+    <h4>당신이 배우고 싶은 언어는?(다중 선택 가능)</h4>
+    <input type="checkbox" name="chk_lang" id="chk_html" />
+    <label for="chk_html">HTML</label>
+    <input type="checkbox" name="chk_lang" id="chk_css" />
+    <label for="chk_css">CSS</label>
+    <input type="checkbox" name="chk_lang" id="chk_js" />
+    <label for="chk_js">JS</label>
+    <!-- checkbox는 input, 같이 쌍으로 id를 같게 만들어 주는게 매우 중요함 -->
+    <!-- input에 name 속성을 넣어주어야 다 같은 선택지라는 것을 알 수 있음-->
+
+    <h4>당신이 배우고 싶은 언어는?(하나만 선택 가능)</h4>
+    <div></div>
+    <input type="radio" id="rdo_html" name="rdo_lang" />
+    <label for="rdo_html">HTML</label>
+    <input type="radio" id="rdo_css" name="rdo_lang" />
+    <label for="rdo_css">CSS</label>
+    <input type="radio" id="rdo_js" name="rdo_lang" />
+    <label for="rdo_js">JS</label>
+
+    <!-- 색상을 선택할 수 있음 -->
+    <div>
+      <label>가장 좋아하는 색상은?</label>
+      <input type="color" name="" id="" />
+    </div>
+
+    <!-- 날짜 -->
+    <div>
+      <label for="bornDate">태어난 날짜는?</label>
+      <input type="date" id="bornDate" />
+    </div>
+    <!-- 날짜+시간 -->
+    <div>
+      <label for="arrivalDateTime">입국한 날짜/시간은?</label>
+      <input type="datetime-local" id="arrivalDateTime" />
+    </div>
+    <!-- 이메일 + 폼태그 -->
+    <!-- submit이라는 버튼을 만나면 사용자로부터 받은 모든 정보를 form의 action으로 보내줌 -->
+    <div>
+      <form action="">
+        <label for="userEmail">이메일주소는?</label>
+        <input type="email" name="" id="userEmail" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <!-- 파일 첨부 -->
+    <div>
+      <label for="attachment">파일 첨부</label>
+      <input type="file" id="attachment" />
+    </div>
+
+    <!-- 안보이는 정보 입력 -->
+    <!-- 개발자가 사용하기ㅏ 위해 쓰는 태그임 (자바스크립트 같은 것을 입력) -->
+    <div>
+      <label for=""></label>
+      <input type="hidden" name="email" value="john@gmail.com" />
+    </div>
+    <!-- input에도 img type이 있지만 실무에서는 거의 쓰지 않는다. -->
+    <div>
+      <input type="image" src="" alt="" />
+    </div>
+    <!-- 년월만 선택가능한 것 -->
+    <div>
+      <label for="yearmonth">생년/년월</label>
+      <input type="month" id="yearmonth" />
+    </div>
+    <!-- 숫자의 범위에서 선택하는 것 -->
+    <div>
+      <label for="">당신의 나이는?</label>
+      <input type="number" min="0" max="100" />
+    </div>
+    <!-- 전화번호 + 폼태그 + 자바스크립트 정규식(pattern) 정해진 숫자형식으로 입력하세요!-->
+    <div>
+      <form action="">
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" pattern="^010-\d(4)-\d(4)$" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <!-- URL -->
+    <div>
+      <form action="">
+        <label for="blogUrl">블로그 주소는?</label>
+        <input type="url" name="" id="blogUrl" />
+        <button>저장</button>
+      </form>
+    </div>
+    <!-- search -->
+    <div>
+      <label for=""></label>
+      <input type="search" id="searchKeyword" />
+    </div>
+
+    <!-- 모바일에서는 각각의 형식에 맞게 키보드가 바뀌기 때문에 모바일 편의성을 고려해서 input type을 분명하게 해주어야함-->
+  </body>
+</html>

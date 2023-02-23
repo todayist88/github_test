@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- 옵션이 많을때는 select를 사용할 수 있지만 사용자의 편의를 먼저 고려해야함. -->
+  <body>
+    <label for="">살고 있는 지역은?</label>
+    <select name="" id="">
+      <option value="02">서울</option>
+      <option value="051">부산</option>
+      <option value="064">제주</option>
+    </select>
+    <div>
+      <input type="radio" id="male" name="rdo_gender" />
+      <label for="male">남자</label>
+      <input type="radio" id="female" name="rdo_gender" />
+      <label for="female">여자</label>
+    </div>
+    <div>
+      <textarea name="" id="" style="width: 100%" rows="10"></textarea>
+    </div>
+    <div>
+      <fieldset>
+        <legend>기본정보</legend>
+        <div>
+          <label for="">이름</label>
+          <input type="text" name="" id="name" />
+        </div>
+        <div>
+          <label for="">연락처</label>
+          <input type="tel" name="" id="tel" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>학력정보</legend>
+        <div>
+          <label for="">대학교</label>
+          <input type="text" name="" id="university" />
+        </div>
+        <div>
+          <label for="">졸업년도</label>
+          <input type="text" name="" id="year" />
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Datalist: 사용자가 입력하면 뜨게된다.-->
+    <div>
+      <input list="browsers" id="browsers1" />
+      <datalist id="browsers">
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">Chrome</option>
+      </datalist>
+    </div>
+    <div>
+      <input list="browsers" id="browsers2" />
+    </div>
+  </body>
+</html>

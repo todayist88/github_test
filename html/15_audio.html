@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- audio : 오디오 콘텐츠를 재생할 수 있는 가장 빠른 시점에 자동 재생-->
+    <!-- loop: 오디오 끝까지 재생되고 나면, 다시 처음부터 재생 -->
+    <!-- muted : 소리 소거 -->
+    <!-- preload : auto, metadata, none -->
+    <!-- auto: 사용자가 볼지 안볼지는 모르지만, 오디오 파일을 미리 다운 받아둠. 청취할 확율이 매우 높음.-->
+    <!-- metadata : 오디오를 다운로드 하지 않고, 오디오 시간과 같은 메타 정보만 미리 가져옴 -->
+    <!-- none : 오디오를 다운로드 하지 않고, 사용자가 오디오를 바로 보지 않을 확율이 매우 높은 것, 서버가 최소한의 트레픽을 유지하고 싶을 때 -->
+
+    <audio src="./test.mp3" controls preload="none"></audio>
+  </body>
+</html>

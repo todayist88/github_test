@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 클래스 선택자 */
+      /* 선택자 이름이 점(.)으로 시작 */
+      .color-red {
+        color: red;
+      }
+      .color-blue {
+        color: blue;
+      }
+      /* 실무에서는 색상이 바뀔 수 있기 때문에 색상 명보다는 메인컬러, 서브컬러 등으로 코딩을 해둠 */
+      .color-primary {
+        color: pink;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .box1 {
+        color: red;
+        background-color: blue;
+      }
+      /* main color */
+      /* secondary color */
+      /* info */
+      /* danger */
+    </style>
+  </head>
+  <body>
+    <!-- 글로벌 속성 class -->
+    <p style="color: red">빨간색 글자입니다.</p>
+    <p class="color-red">빨간색 글자를 클래스를 사용해서 적용</p>
+    <p class="color-blue">파란색 글자를 클래스를 사용해서 적용</p>
+    <p class="color-primary bg-yellow">메인컬러</p>
+    <p class="bg-yellow">배경색이 노란색입니다</p>
+    <p class="box1">글자는 빨간색, 배경은 파란색</p>
+  </body>
+</html>

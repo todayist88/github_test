@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- source -->
+    <!-- controls - 비디오 관련된 재생, 멈춤, 음성 등 조정을 위한 UI가 제공 -->
+    <!-- autoplay - 자동실행 -->
+    <!-- muted - 음성소거 -->
+    <!-- loop - 영상이 끝에 가면 처음부터 실행 -->
+    <!-- poster - 영상 실행전 보이는 썸네일 이미지 -->
+    <!-- preload : auto, metadata, none -->
+    <!-- auto: 사용자가 볼지 안볼지는 모르지만, 영상을 미리 다운 받아둠. 시청할 확율이 매우 높음.-->
+    <!-- metadata : 영상을 다운로드 하지 않고, 영상 상영 시간과 같은 메타 정보만 미리 가져옴 -->
+    <!-- none : 영상을 다운로드 하지 않고, 사용자가 영상을 바로 보지 않을 확율이 매우 높은 것, 서버가 최소한의 트레픽을 유지하고 싶을 때 -->
+    <video
+      src="./Ddo Dda gi1.mp4"
+      width="320"
+      poster="./test.png"
+      controls
+      autoplay
+      muted
+      loop
+    ></video>
+    <br />
+    <video src="./Ddo Dda gi1.mp4" width="320" controls>
+      <track
+        src="./test.en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="영어(English)"
+      />
+      <track
+        src="./test.ko.vtt"
+        kind="subtitles"
+        srclang="ko"
+        label="한국어(korean)"
+      />
+    </video>
+  </body>
+</html>
