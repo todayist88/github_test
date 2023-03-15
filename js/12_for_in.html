@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // for in 구문에서 in 다음에 오는 변수가 '배열'일 경우에는 "in" 앞의 변수에 반복적으로 index값을 하나씩 증가해서 넣어서 연산한다.
+      let brands = ["애플", "구글", "아마존", "마이크로소프트", "메타"];
+      for (const index in brands) {
+        console.log(brands[index]);
+      }
+      // for in 구문에서 in 다음에 오는 변수가 '오브젝트'일 경우에는 "in" 앞의 변수에 key값을 넣어준다.
+
+      let person = {
+        name: "홍길동",
+        age: 22,
+        tel: "010-0000-0000",
+        city: "Seoul",
+      };
+
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.tel);
+      console.log(person.city);
+
+      for (const key in person) {
+        console.log(key, ":", person[key]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      // document: htmml 문서 태그와 관련된 기능을 갖고 있음
+      // document.write(); <body> 태그 안에 먼저 들어감
+      // html tag를 넣으면 tag로서 기능유지.
+      // js 끝에는 세미콜론이 붙어야함.
+      document.write("Hello World!<br/>");
+    </script>
+    <!-- defer라는 속성은 자바스크립트 파일을 head 태그에 삽입해도 실제 실행은 body 바로 아래에서 실행함 -->
+    <script src="./js/01_js_location.js" defer></script>
+  </head>
+  <body>
+    <script>
+      document.write("개발자의 품격");
+    </script>
+
+    <h1>머리말1</h1>
+    <script>
+      document.write("부트캠프");
+    </script>
+    <!-- script는 html body 태그 맨 마지막에 배치하는 것을 추천함  -->
+    <!-- 화면에 UI가 보일때까지 시간을 최소화하는 방법. 
+      js가 위에 있고 아래에 있고 시간차이가 크게날 수 있음. -->
+    <!-- 하단의 형태가 추천하는 형태. 먼저 외부에서 js를 불러오고 하단에 페이지별 script를 넣음 -->
+    <script src="./js/01_js_location.js" defer></script>
+    <script></script>
+  </body>
+</html>
