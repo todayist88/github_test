@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="http://www.naver.com">네이버</a>
+    <button onclick="openNaver();">네이버</button>
+    <script>
+      // window 객체
+
+      // window.alert("이것은 경고입니다.");
+      // alert("이것은 경고입니다.");  // window 객체의 경우 많은 경우 앞에 window.를 생략해서 사용하기도 함.
+      // 경고창이 시각적으로 너무 안이뻐서 잘 안씀. alert open source 를 가져다가 많이 사용함.
+
+      function doDelete() {
+        const pass = prompt("비밀번호를 입력하셔야 삭제가 진행됩니다.");
+        if (pass === "1234") {
+          if (confirm("정말 삭제하시겠습니까?")) {
+            console.log("삭제되었습니다.");
+          }
+        } else {
+          alert("비밀번호가 틀립니다.");
+        }
+      }
+
+      // doDelete();
+
+      // window.open
+      function openNaver() {
+        window.open("http://www.naver.com");
+      }
+
+      // 지정한 시간 후에 합수 실행 마지막 요소에 시간 (밀리초)를 넣으면 그 시간 이후에 function()이 실행됨
+
+      const myFunc = setTimeout(function () {
+        console.log("3초 후에 출력됩니다.");
+      }, 3000);
+
+      // 중단하고 싶을때
+      clearInterval(myFunc);
+
+      const myFunc2 = setInterval(function () {
+        console.log("1초마다 출력됩니다");
+      }, 1000);
+
+      // 중단하고 싶을때
+      clearInterval(myFunc2);
+    </script>
+  </body>
+</html>
