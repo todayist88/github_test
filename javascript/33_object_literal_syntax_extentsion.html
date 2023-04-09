@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        firstName: "John",
+        lastName: "Doe",
+      };
+      // object literal syntax extension
+      console.log(person.firstName);
+      console.log(person["lastName"]);
+
+      person["email"] = "john@gmail.com";
+      console.log(person);
+
+      // object literal syntax extension
+      // object를 선언하는 시점에 키(Key)를 변수명을 사용해서 정의할 수 있음
+      let type = "studentName";
+      let score = {
+        point: 95,
+        [type]: "John",
+        // studentName: "John"
+      };
+    </script>
+  </body>
+</html>
